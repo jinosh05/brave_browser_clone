@@ -11,7 +11,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  # For Browser
   flutter_inappwebview: ^5.4.3+7
+  flutter_downloader: ^1.8.4
+
+  # Support
 
 dev_dependencies:
   flutter_test:
