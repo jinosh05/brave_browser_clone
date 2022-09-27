@@ -17,6 +17,7 @@ dependencies:
   flutter_downloader: ^1.8.4
 
   # Support
+  path_provider: ^2.0.11
 
 dev_dependencies:
   flutter_test:
