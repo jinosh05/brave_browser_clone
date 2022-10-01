@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 // Need to Use this Font Family
-// const fontFamily = "SF UI Display";
-const fontFamily = 'Poppins';
+const fontFamily = "SF UI";
+// const fontFamily = 'Poppins';
 
 final themeLight = ThemeData(
   primaryColorLight: const Color(0xffC0392B),
