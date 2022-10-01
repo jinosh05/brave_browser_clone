@@ -7,6 +7,7 @@ final themeMap = {
   "light": ThemeMode.light,
 };
 
+/// This Provider is currently used just to get and set themes
 class AppProvider extends ChangeNotifier {
   static AppProvider state(BuildContext context, [bool listen = false]) =>
       Provider.of<AppProvider>(context, listen: listen);
