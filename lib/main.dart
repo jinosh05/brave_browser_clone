@@ -1,5 +1,6 @@
 import 'package:brave_browser_clone/provider/app_provider.dart';
 import 'package:brave_browser_clone/provider/drawer_provider.dart';
+import 'package:brave_browser_clone/screens/dummy.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../configs/core_theme.dart' as theme;
@@ -60,7 +61,7 @@ class _MaterialChildState extends State<MaterialChild> {
       theme: theme.themeLight,
       darkTheme: theme.themeDark,
       themeMode: widget.provider.themeMode,
-      // home: ,
+      home: const Dummy(),
     );
   }
 }
