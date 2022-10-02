@@ -4,6 +4,7 @@ import 'package:brave_browser_clone/screens/dummy.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../configs/core_theme.dart' as theme;
+import 'configs/app.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -61,6 +62,16 @@ class _MaterialChildState extends State<MaterialChild> {
       theme: theme.themeLight,
       darkTheme: theme.themeDark,
       themeMode: widget.provider.themeMode,
+
+      ///
+      /// We have to init the App before going to anyscreen and
+      /// it must be inside MaterialApp.
+      /// This builder does the work
+      ///
+      builder: (context, child) {
+        App.init(context);
+        return child!;
+      },
       home: const Dummy(),
     );
   }
