@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../configs/app_dimensions.dart';
 import '../constants/colors.dart';
 
+/// Overlay for Home and other screens
+/// use along with Stack
 class GradientArc extends StatelessWidget {
   const GradientArc({
     Key? key,
