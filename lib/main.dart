@@ -4,6 +4,7 @@ import 'package:brave_browser_clone/screens/dummy.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
 import '../configs/core_theme.dart' as theme;
 import 'configs/app.dart';
@@ -13,6 +14,11 @@ void main() async {
 
   // Initialise FlutterDownloader
   await FlutterDownloader.initialize(debug: kDebugMode);
+
+  // Permission handlers
+  await Permission.camera.request();
+  await Permission.microphone.request();
+  await Permission.storage.request();
 
   runApp(const MyApp());
 }
