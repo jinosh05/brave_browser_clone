@@ -1,13 +1,19 @@
 import 'package:brave_browser_clone/provider/app_provider.dart';
 import 'package:brave_browser_clone/provider/drawer_provider.dart';
 import 'package:brave_browser_clone/screens/dummy.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:provider/provider.dart';
 import '../configs/core_theme.dart' as theme;
 import 'configs/app.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialise FlutterDownloader
+  await FlutterDownloader.initialize(debug: kDebugMode);
+
   runApp(const MyApp());
 }
 
