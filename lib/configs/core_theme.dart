@@ -7,6 +7,7 @@ const fontFamily = "SF UI";
 final themeLight = ThemeData(
   primaryColorLight: const Color(0xffC0392B),
   brightness: Brightness.light,
+  visualDensity: VisualDensity.adaptivePlatformDensity,
   primaryColor: const Color(0xffC0392B),
   highlightColor: Colors.black,
   canvasColor: Colors.white,
@@ -22,6 +23,7 @@ final themeLight = ThemeData(
 
 final themeDark = ThemeData(
   brightness: Brightness.dark,
+  visualDensity: VisualDensity.adaptivePlatformDensity,
   primaryColorDark: const Color(0xffC0392B),
   primaryColor: const Color(0xffC0392B),
   highlightColor: const Color(0xffC0392B),
