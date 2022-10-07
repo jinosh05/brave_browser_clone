@@ -13,6 +13,7 @@ class _DummyState extends State<Dummy> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // bottomNavigationBar: BottomNavigationBar(items: [BottomNavigationBarItem(icon: )]),
       body: Column(
         children: const [
           GradientArc(),
