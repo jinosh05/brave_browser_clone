@@ -5,4 +5,6 @@ class AppColors {
     Color(0x80A12476),
     Color(0x8083288A),
   ];
+
+  static const Color blackRussian = Color(0xff171720);
 }

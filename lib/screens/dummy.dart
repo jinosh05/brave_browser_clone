@@ -1,3 +1,4 @@
+import 'package:brave_browser_clone/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/gradient_arc.dart';
@@ -13,7 +14,10 @@ class _DummyState extends State<Dummy> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // bottomNavigationBar: BottomNavigationBar(items: [BottomNavigationBarItem(icon: )]),
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: AppColors.blackRussian,
+      ),
       body: Column(
         children: const [
           GradientArc(),
