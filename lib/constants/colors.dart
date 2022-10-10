@@ -7,4 +7,6 @@ class AppColors {
   ];
 
   static const Color blackRussian = Color(0xff171720);
+
+  static const Color secondary = Color(0xff1F1F2A);
 }
