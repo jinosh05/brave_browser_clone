@@ -16,30 +16,31 @@ class _DummyState extends State<Dummy> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: AppColors.blackRussian,
-        title: Padding(
-          padding: Space.vf(AppDimensions.normalize(
-            2,
-          )),
-          child: Container(
-            padding: Space.all(
-              AppDimensions.normalize(5),
-            ),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(
-                AppDimensions.normalize(2),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              color: AppColors.blackRussian,
+              padding: Space.all(
+                AppDimensions.normalize(
+                  0.25,
+                ),
               ),
-              color: AppColors.secondary,
+              child: Container(
+                padding: Space.all(
+                  AppDimensions.normalize(0.5),
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(
+                    AppDimensions.normalize(0.2),
+                  ),
+                  color: AppColors.secondary,
+                ),
+              ),
             ),
-          ),
+            const GradientArc(),
+          ],
         ),
-      ),
-      body: Column(
-        children: const [
-          GradientArc(),
-        ],
       ),
     );
   }
